@@ -134,7 +134,9 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Scripts\jquery-2.1.1.min.map" />
   </ItemGroup>
   <ItemGroup>
@@ -154,6 +156,10 @@
     <ProjectReference Include="..\GoogleChart.BusinessLayer\GoogleChart.BusinessLayer.csproj">
       <Project>{92ddd53f-d464-41ad-bf47-5fd2dd4bad42}</Project>
       <Name>GoogleChart.BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoogleChart.Dto\GoogleChart.Dto.csproj">
+      <Project>{82f066c0-a073-49eb-b9bb-663a5627040f}</Project>
+      <Name>GoogleChart.Dto</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

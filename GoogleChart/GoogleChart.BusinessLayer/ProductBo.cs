@@ -9,7 +9,11 @@ namespace GoogleChart.BusinessLayer
 {
     public class ProductBo
     {
-        public List<BestSellingProducts> BestSellingProducts()
+        /// <summary>
+        /// Esse método em teoria buscaria os dados em uma base de dados. Por questões didáticas ele está fixo aqui.
+        /// </summary>
+        /// <returns></returns>
+        public List<BestSellingProducts> GetBestSellingProducts()
         {
 
             return new List<BestSellingProducts>(new List<BestSellingProducts>
@@ -20,7 +24,7 @@ namespace GoogleChart.BusinessLayer
                 new BestSellingProducts(new Product("Computador"),70),
                 new BestSellingProducts(new Product("Livro"),30),
                 new BestSellingProducts(new Product("Tablet"),130),
-                new BestSellingProducts(new Product("Servidor"),10)
+                new BestSellingProducts(new Product("Servidor"),20)
             });
         }
     }
