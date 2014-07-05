@@ -2,6 +2,7 @@ ASP.NET MVC + Google Chart
 ===========
 
 Esse projeto visa mostrar a criação de gráficos usando Google Chart API, usando tecnologias Microsoft:
+
 C# + ASP.NET MVC 4 + WEB.API 2
 
 
