@@ -10,7 +10,8 @@ namespace GoogleChart.BusinessLayer
     public class ProductBo
     {
         /// <summary>
-        /// Esse método em teoria buscaria os dados em uma base de dados. Por questões didáticas ele está fixo aqui.
+        /// Esse método em teoria buscaria os dados em uma base de dados. 
+        /// Por questões didáticas ele está fixo aqui.
         /// </summary>
         /// <returns></returns>
         public List<BestSellingProducts> GetBestSellingProducts()

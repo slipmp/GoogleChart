@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace GoogleChart.Dto
 {
+    /// <summary>
+    /// Entidade que representa os produtos mais
+    /// vendidos.
+    /// </summary>
     public class BestSellingProducts
     {
         private Product _product;

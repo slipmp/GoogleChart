@@ -12,7 +12,8 @@
         
 
             getBestSellingProducts();
-            //Esse método é responsável por chamar o API que retornará os dados em formato JSON
+            //Esse método é responsável por chamar o API que retornará os dados 
+            //em formato JSON
             function getBestSellingProducts()
             {
                 $.ajax({
@@ -38,18 +39,22 @@
 
                 for (i = 0; i < arrayBestSellingProducts.length; i++)
                 {
-                    data.addRow([arrayBestSellingProducts[i].Product.Name, arrayBestSellingProducts[i].Quantity]);
+                    data.addRow([arrayBestSellingProducts[i].Product.Name,
+                        arrayBestSellingProducts[i].Quantity]);
                 }
 
-                // Set chart options
+                // Opções do gráfico
                 var options = {
                     'title': 'Produtos mais vendidos - www.slipmp.com',
                     'width': 740,
                     'height': 400
                 };
 
-                // Instantiate and draw our chart, passing in some options.
-                var chart = new google.visualization.PieChart(document.getElementById('divGoogleChart'));
+                // Instancia o gráfico à partir de elementos na página.
+                // No caso será redenrizado em um elemento chamado 
+                // divGoogleChart que por sua vez é uma div.
+                var chart = new google.visualization.PieChart
+                    (document.getElementById('divGoogleChart'));
 
                 chart.draw(data, options);
             }
