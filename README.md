@@ -5,6 +5,9 @@ Esse projeto visa mostrar a criação de gráficos usando Google Chart API, usan
 
 C# + ASP.NET MVC 4 + WEB.API 2
 
+Link para explicação completa do projeto:
+
+http://www.slipmp.com.br/blog/index.php/c-asp-net-mvc-4-web-api-2-grafico-google-chart/
 
 Print screen:
 
