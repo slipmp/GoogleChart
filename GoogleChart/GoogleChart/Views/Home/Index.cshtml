@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Scripts {
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        //Responsável por carregar a engine de criação do Google Chart
+        google.load('visualization', '1.0', { 'packages': ['corechart'] });
+        $(document).ready(function() {
+        
+
+            getBestSellingProducts();
+            //Esse método é responsável por chamar o API que retornará os dados em formato JSON
+            function getBestSellingProducts()
+            {
+                drawChartCallBack();
+            }
+        
+            // Método responsável por carregar todas as informações no gráfico.
+            function drawChartCallBack() {
+
+                // Create the data table.
+                var data = new google.visualization.DataTable();
+                data.addColumn('string', 'asdasd');
+                data.addColumn('number', 'Slices');
+                data.addRows([
+                    ['Mushrooms', 3],
+                    ['Onions', 1],
+                    ['Olives', 1],
+                    ['Zucchini', 1],
+                    ['Pepperoni', 2]
+                ]);
+
+                // Set chart options
+                var options = {
+                    'title': 'Google Chart - Exemplo de gráfico',
+                    'width': 600,
+                    'height': 400
+                };
+
+                // Instantiate and draw our chart, passing in some options.
+                var chart = new google.visualization.PieChart(document.getElementById('divGoogleChart'));
+
+                chart.draw(data, options);
+            }
+
+        });
+
+
+</script>
+
+}
+
+<div id="divGoogleChart" style="border:2px solid #ccc;width:605px;" ></div>
