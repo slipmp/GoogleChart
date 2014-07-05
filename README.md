@@ -1,4 +1,4 @@
-C# + ASP.NET MVC + Web API + Gráfico - Google Chart
+C# + ASP.NET MVC + Web API + Google Chart
 ===========
 
 GoogleChart
